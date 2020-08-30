@@ -40,8 +40,11 @@ console.log(myTest);
 myTest *= 5;
 console.log(myTest);
 
-myTest /= 3;
+myTest /= myNum;
 console.log(myTest);
+
+myTest %= 3;
+console.log('%=', myTest);
 
 /* #5*/
 var myPi = Math.PI;
@@ -64,8 +67,9 @@ console.log(strObj);
 
 /* #7*/
 
-var isRamaPos = strObj.str.indexOf;
-console.log(isRamaPos);
+var isRamaPos = strObj.str.indexOf('рама');
+
+console.log('isRamaPos:', isRamaPos);
 
 /* #8*/
 var strReplace =strObj.str.replace ('мыла', 'моет');
